@@ -8,49 +8,15 @@ export default function Welcome() {
     <section id="welcome" className="py-24 md:py-28 bg-warm-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Designed Vermont vignette + Est. badge */}
+          {/* The historic 1837 stone meetinghouse + Est. badge */}
           <AnimateOnScroll>
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-pine-deep/10">
-                <svg viewBox="0 0 600 500" className="w-full block" aria-hidden="true">
-                  <defs>
-                    <linearGradient id="wSky" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0" stopColor="#bcd2cf" />
-                      <stop offset="0.6" stopColor="#e7dcb9" />
-                      <stop offset="1" stopColor="#f0e3c0" />
-                    </linearGradient>
-                    <radialGradient id="wSun" cx="0.5" cy="0.5" r="0.5">
-                      <stop offset="0" stopColor="#fff6db" stopOpacity="0.9" />
-                      <stop offset="1" stopColor="#fff6db" stopOpacity="0" />
-                    </radialGradient>
-                  </defs>
-                  <rect width="600" height="500" fill="url(#wSky)" />
-                  <circle cx="430" cy="150" r="150" fill="url(#wSun)" />
-                  <circle cx="430" cy="150" r="34" fill="#fff2c6" opacity="0.9" />
-                  {/* layered hills */}
-                  <path d="M0,250 L120,210 L260,242 L400,200 L520,238 L600,212 L600,500 L0,500 Z" fill="#7e9c8b" />
-                  <path d="M0,310 L150,272 L320,312 L480,268 L600,304 L600,500 L0,500 Z" fill="#4f7860" />
-                  <path d="M0,372 L180,332 L360,374 L540,330 L600,352 L600,500 L0,500 Z" fill="#2d5240" />
-                  <path d="M0,440 L220,414 L460,440 L600,420 L600,500 L0,500 Z" fill="#1c3526" />
-                  {/* meetinghouse */}
-                  <g transform="translate(252 300)">
-                    <polygon points="0,42 38,8 76,42" fill="#f6f0e2" />
-                    <rect x="8" y="42" width="60" height="44" fill="#f6f0e2" />
-                    <rect x="28" y="-18" width="20" height="40" fill="#f6f0e2" />
-                    <polygon points="24,-18 38,-44 52,-18" fill="#f6f0e2" />
-                    <rect x="36.5" y="-58" width="3" height="16" fill="#f6f0e2" />
-                    <rect x="31" y="-54" width="14" height="3.5" fill="#f6f0e2" />
-                    <rect x="32" y="56" width="14" height="30" rx="1" fill="#6b4422" />
-                    <rect x="16" y="52" width="9" height="14" rx="1" fill="#cdd9c9" />
-                    <rect x="53" y="52" width="9" height="14" rx="1" fill="#cdd9c9" />
-                  </g>
-                  {/* foreground pines */}
-                  <g fill="#16291c">
-                    <polygon points="70,470 110,470 90,408" />
-                    <polygon points="500,470 548,470 524,396" />
-                    <polygon points="520,470 560,470 540,418" />
-                  </g>
-                </svg>
+                <img
+                  src="/building.jpg"
+                  alt="The historic stone meetinghouse of Bow Baptist Church, built in 1837 in Weathersfield Bow, Vermont"
+                  className="w-full aspect-[4/3] object-cover block"
+                />
               </div>
               {/* Est. badge */}
               <div className="absolute -bottom-5 -right-3 sm:-right-5 w-24 h-24 rounded-full bg-pine text-cream flex flex-col items-center justify-center shadow-lg ring-4 ring-warm-white">

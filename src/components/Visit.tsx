@@ -52,18 +52,35 @@ export default function Visit() {
   return (
     <section id="visit" className="py-24 md:py-28 bg-cream">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-14">
-          <span className="inline-block text-xs font-bold tracking-[0.22em] uppercase text-oak mb-3">
-            Your First Visit
-          </span>
-          <Peaks className="text-oak-light mb-5" />
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-text-dark mb-4">
-            What to Expect
-          </h2>
-          <p className="text-lg text-text-light">
-            Visiting a church for the first time can feel like a big step. Here&rsquo;s a
-            little of what you&rsquo;ll find when you join us.
-          </p>
+        {/* Intro: photo + heading */}
+        <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center mb-16">
+          <AnimateOnScroll>
+            <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-pine-deep/10">
+              <img
+                src="/fellowship.jpg"
+                alt="A warm welcome among the church family at Bow Baptist Church"
+                className="w-full aspect-[4/5] object-cover block"
+              />
+            </div>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll delay={150}>
+            <div>
+              <span className="inline-block text-xs font-bold tracking-[0.22em] uppercase text-oak mb-3">
+                Your First Visit
+              </span>
+              <Peaks className="text-oak-light mb-5" />
+              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-text-dark mb-5">
+                What to Expect
+              </h2>
+              <p className="text-lg text-text-light leading-relaxed">
+                Visiting a church for the first time can feel like a big step. From the
+                moment you arrive, you&rsquo;ll be met by friendly faces and the warmth of a
+                church family that&rsquo;s genuinely glad you came. Here&rsquo;s a little of
+                what you&rsquo;ll find when you join us.
+              </p>
+            </div>
+          </AnimateOnScroll>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
