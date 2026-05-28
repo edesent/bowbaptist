@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Our Pastor",
   description:
-    "Meet Tom A. Faulk, interim pastor of Bow Baptist Church in Weathersfield Bow, Vermont.",
+    "Meet Pastor Wesley Allen — called by unanimous vote to shepherd Bow Baptist Church, Weathersfield Bow, Vermont. Officially begins June 1, 2026.",
 };
 
 export default function PastorPage() {
@@ -16,14 +16,29 @@ export default function PastorPage() {
       <Navbar />
       <PageHero
         kicker="Meet Our Pastor"
-        title="Pastor Tom A. Faulk"
-        subtitle="Interim Pastor, Bow Baptist Church"
+        title="Pastor Wesley Allen"
+        subtitle="Called by unanimous vote to shepherd Bow Baptist Church · Officially begins June 1, 2026"
       />
 
       <main className="bg-warm-white py-20 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
+          {/* Joyful announcement */}
+          <div className="mb-12 p-6 md:p-7 rounded-2xl bg-cream border-l-4 border-harvest">
+            <p className="text-[0.7rem] font-bold tracking-[0.22em] uppercase text-harvest mb-2">
+              A Joyful Announcement
+            </p>
+            <p className="text-text-body leading-relaxed">
+              By <strong className="text-text-dark">unanimous vote</strong>, the church
+              family of Bow Baptist Church has called{" "}
+              <strong className="text-text-dark">Pastor Wesley Allen</strong> to be our
+              pastor. The church family is rejoicing and hopeful of a bright future.
+              Pastor Allen will officially begin his ministry on{" "}
+              <strong className="text-text-dark">June 1, 2026</strong>.
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-[300px_1fr] gap-12 items-start">
-            {/* Portrait — replace the SVG below with a real photo at /pastor.jpg */}
+            {/* Portrait placeholder — swap this <svg> for an <img src="/pastor.jpg" .../> when a photo is available */}
             <div className="mx-auto md:mx-0 w-full max-w-[300px]">
               <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-pine-deep/10">
                 <svg viewBox="0 0 300 360" className="w-full block" aria-hidden="true">
@@ -41,7 +56,7 @@ export default function PastorPage() {
                 </svg>
               </div>
               <p className="text-center text-xs text-text-muted mt-3 italic">
-                A photo of Pastor Faulk will appear here.
+                A photo of Pastor Allen will appear here.
               </p>
             </div>
 
@@ -49,29 +64,33 @@ export default function PastorPage() {
             <div>
               <Peaks className="text-oak-light mb-5" />
               <h2 className="font-serif text-3xl font-semibold text-text-dark mb-5">
-                A shepherd for this season
+                A new chapter for Bow Baptist
               </h2>
               {/*
-                PLACEHOLDER BIO — gently written and true to what we know.
-                Replace with Pastor Faulk's own words: his family, testimony,
-                how the Lord called him, and his heart for Bow Baptist Church.
+                PLACEHOLDER BIO — replace with Pastor Allen's own words: his family,
+                testimony, how the Lord called him to Bow Baptist, and his heart for
+                this church and the Vermont community.
               */}
               <div className="space-y-4 text-text-body leading-relaxed">
                 <p>
-                  Pastor Tom A. Faulk serves as the interim pastor of Bow Baptist Church,
-                  faithfully preaching the Word of God and caring for the church family
-                  during this season of ministry.
+                  The Lord has been gracious to Bow Baptist Church through every
+                  season of its long history, and this one is no exception. Following
+                  a season of faithful interim ministry under Pastor Tom A. Faulk, the
+                  church family met and — with one voice — called Pastor Wesley Allen
+                  to shepherd this congregation.
                 </p>
                 <p>
-                  Each week he opens the King James Bible to feed the flock with clear,
-                  Christ-centered preaching — that believers might grow in grace and that
-                  those who do not yet know the Lord might come to faith in Jesus Christ.
+                  Pastor Allen will open the King James Bible each Lord&rsquo;s Day to
+                  feed the flock with clear, Christ-centered preaching — that
+                  believers might grow in grace and that those who do not yet know the
+                  Lord might come to faith in Jesus Christ.
                 </p>
                 <p>
-                  More than a preacher behind a pulpit, a pastor is a shepherd who walks
-                  alongside his people in the joys and trials of life. If you are looking
-                  for a church home, or simply have questions about the Lord, Pastor Faulk
-                  and the people of Bow Baptist would be glad to welcome you.
+                  More than a preacher behind a pulpit, a pastor is a shepherd who
+                  walks alongside his people in the joys and trials of life. If
+                  you&rsquo;re looking for a church home — or simply have questions
+                  about the Lord — Pastor Allen and the people of Bow Baptist would
+                  be glad to welcome you.
                 </p>
                 <p className="font-serif italic text-pine-mid">
                   &ldquo;Feed the flock of God which is among you, taking the oversight

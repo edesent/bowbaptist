@@ -59,7 +59,7 @@ three to keep them in sync.
 a placeholder drawing where the photo goes and gently-written placeholder text
 (look for the `PLACEHOLDER BIO` comment). To add a real photo: put the image file
 in the `public/` folder (e.g. `public/pastor.jpg`) and replace the placeholder
-`<svg>` block with `<img src="/pastor.jpg" alt="Pastor Tom A. Faulk" className="w-full block" />`.
+`<svg>` block with `<img src="/pastor.jpg" alt="Pastor Wesley Allen" className="w-full block" />`.
 
 **Wording anywhere** — find the page or section file above and change the text
 between the tags. Don't touch the `className="..."` parts (those are styling).

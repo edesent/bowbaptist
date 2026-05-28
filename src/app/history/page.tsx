@@ -52,8 +52,12 @@ const milestones = [
     text: "Pastor Walter McDaniel serves faithfully for over three decades (1987–2020), overseeing extensive renovations, followed by Pastor Daniel Anderson (2020–2025).",
   },
   {
+    year: "May 2026",
+    text: "After a season under interim Pastor Tom A. Faulk, the church family unanimously calls Pastor Wesley Allen to shepherd Bow Baptist. He officially begins his ministry on June 1, 2026 — the same gospel, a new chapter.",
+  },
+  {
     year: "Today",
-    text: "The same gospel still rings out from the hill. Under our interim pastor, Tom A. Faulk, Bow Baptist Church continues to preach Christ, sing the old hymns, and welcome every soul who comes through the door.",
+    text: "The same gospel still rings out from the hill — preached from the King James Bible, sung in the old hymns, with the door open to every soul who comes.",
   },
 ];
 

@@ -48,13 +48,18 @@ export default function Welcome() {
                 God&rsquo;s Word from the King James Bible, traditional hymns, and
                 heartfelt prayer. Come as you are — you&rsquo;ll find a friend here.
               </p>
-              <p className="font-serif italic text-pine-mid mb-7">
-                &ldquo;We&rsquo;d count it a joy to welcome you and your family this
-                Sunday.&rdquo;
-                <span className="not-italic block text-sm text-text-light mt-2 font-sans">
-                  — Pastor Tom A. Faulk, Interim Pastor
-                </span>
-              </p>
+              <div className="mb-7 p-5 rounded-xl bg-cream border-l-4 border-harvest">
+                <p className="text-[0.68rem] font-bold tracking-[0.22em] uppercase text-harvest mb-2">
+                  A Joyful Announcement
+                </p>
+                <p className="text-text-body leading-relaxed">
+                  By unanimous vote, the church family has called{" "}
+                  <strong className="text-text-dark">Pastor Wesley Allen</strong>{" "}
+                  to be our pastor. We are rejoicing and hopeful of a bright future.
+                  Pastor Allen officially begins his ministry on{" "}
+                  <strong className="text-text-dark">June 1, 2026</strong>.
+                </p>
+              </div>
               <div className="flex flex-wrap gap-4">
                 <a
                   href="/pastor"
