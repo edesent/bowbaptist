@@ -3,10 +3,10 @@
 import AnimateOnScroll from "./AnimateOnScroll";
 import { Peaks } from "./Ridge";
 
-const MAP_EMBED =
-  "https://www.google.com/maps?q=Bow+Baptist+Church,+1102+Route+5,+Weathersfield,+VT+05156&output=embed";
 const MAP_DIRECTIONS =
   "https://www.google.com/maps/dir/?api=1&destination=1102+Route+5,+Weathersfield,+VT+05156";
+const MAP_VIEW =
+  "https://www.google.com/maps/search/?api=1&query=Bow+Baptist+Church,+1102+Route+5,+Weathersfield,+VT+05156";
 
 function Row({
   title,
@@ -35,6 +35,213 @@ function Row({
         <div className="text-text-light">{children}</div>
       </div>
     </div>
+  );
+}
+
+// Hand-illustrated locator — Weathersfield Bow, VT
+// Custom SVG, fully owned, brand-matched (no third-party iframe).
+function LocatorMap() {
+  return (
+    <svg
+      viewBox="0 0 600 480"
+      className="w-full block font-serif"
+      role="img"
+      aria-labelledby="locator-title"
+    >
+      <title id="locator-title">
+        Bow Baptist Church is located at 1102 Route 5 in Weathersfield Bow, Vermont —
+        along Route 5 between Ascutney to the north and Springfield to the south, with the
+        Connecticut River to the east and the Green Mountains to the west.
+      </title>
+
+      <defs>
+        <linearGradient id="lmBg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#f7f0e0" />
+          <stop offset="1" stopColor="#ece0c6" />
+        </linearGradient>
+        <linearGradient id="lmRiver" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stopColor="#5d8770" />
+          <stop offset="0.5" stopColor="#7c9885" />
+          <stop offset="1" stopColor="#4a7a5e" />
+        </linearGradient>
+        <radialGradient id="lmMarkerGlow" cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stopColor="#ffd98a" stopOpacity="0.5" />
+          <stop offset="1" stopColor="#ffd98a" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+
+      {/* parchment background */}
+      <rect width="600" height="480" fill="url(#lmBg)" />
+
+      {/* subtle paper edge frame */}
+      <rect
+        x="14"
+        y="14"
+        width="572"
+        height="452"
+        fill="none"
+        stroke="#8a5a2e"
+        strokeWidth="1.4"
+        strokeDasharray="4 6"
+        opacity="0.45"
+      />
+
+      {/* "Green Mountains" — contour-line elevation, west side */}
+      <g opacity="0.22" stroke="#2f5841" strokeWidth="1.2" fill="none">
+        <path d="M30,90 Q90,68 160,96" />
+        <path d="M22,128 Q86,108 162,134" />
+        <path d="M18,170 Q82,150 162,176" />
+        <path d="M22,214 Q88,196 168,220" />
+        <path d="M28,258 Q92,240 168,264" />
+        <path d="M30,304 Q96,286 168,310" />
+        <path d="M30,348 Q92,328 162,354" />
+        <path d="M30,392 Q92,374 162,398" />
+      </g>
+      <text
+        x="34"
+        y="64"
+        fontSize="10"
+        letterSpacing="3"
+        fill="#2f5841"
+        opacity="0.7"
+      >
+        GREEN MOUNTAINS
+      </text>
+
+      {/* Connecticut River — east edge */}
+      <path
+        d="M520,0 C508,80 540,160 522,240 C504,320 540,400 522,480 L600,480 L600,0 Z"
+        fill="url(#lmRiver)"
+      />
+      <path
+        d="M548,20 C536,80 558,160 548,240 C538,320 562,400 552,460"
+        stroke="#cfddd2"
+        strokeWidth="2"
+        fill="none"
+        opacity="0.55"
+        strokeLinecap="round"
+      />
+      <text
+        x="560"
+        y="244"
+        fontSize="10"
+        letterSpacing="3"
+        fill="#f5eede"
+        textAnchor="middle"
+        transform="rotate(90 560 244)"
+      >
+        CONNECTICUT RIVER
+      </text>
+
+      {/* Route 5 — winding N–S, the church's road */}
+      <g strokeLinecap="round" fill="none">
+        <path
+          d="M280,20 C320,90 270,160 308,224 C346,288 280,348 320,420 L320,480"
+          stroke="#5e3d22"
+          strokeWidth="16"
+        />
+        <path
+          d="M280,20 C320,90 270,160 308,224 C346,288 280,348 320,420 L320,480"
+          stroke="#b98344"
+          strokeWidth="11"
+        />
+        <path
+          d="M280,20 C320,90 270,160 308,224 C346,288 280,348 320,420 L320,480"
+          stroke="#f5eede"
+          strokeWidth="1.4"
+          strokeDasharray="6 7"
+        />
+      </g>
+      <text
+        x="262"
+        y="28"
+        fontSize="10"
+        letterSpacing="2.5"
+        fill="#5e3d22"
+        textAnchor="end"
+      >
+        ROUTE 5
+      </text>
+
+      {/* directional cues */}
+      <text x="320" y="58" fontSize="11" fontStyle="italic" fill="#7e6a52" textAnchor="middle">
+        ↑ to Ascutney
+      </text>
+      <text x="320" y="466" fontSize="11" fontStyle="italic" fill="#7e6a52" textAnchor="middle">
+        to Springfield ↓
+      </text>
+
+      {/* decorative pines around the marker / frame */}
+      <g fill="#1e3a2b" opacity="0.85">
+        <polygon points="70,440 92,440 81,408" />
+        <polygon points="100,452 118,452 109,428" />
+        <polygon points="46,448 64,448 55,422" />
+        <polygon points="172,84 188,84 180,62" />
+        <polygon points="206,118 220,118 213,98" />
+        <polygon points="170,400 188,400 179,374" />
+        <polygon points="208,432 224,432 216,408" />
+      </g>
+
+      {/* Compass rose */}
+      <g transform="translate(548 56)">
+        <circle r="22" fill="#f5eede" stroke="#8a5a2e" strokeWidth="1.4" opacity="0.85" />
+        <path d="M0,-15 L4,0 L0,15 L-4,0 Z" fill="#5e3d22" />
+        <path d="M0,-15 L4,0 L0,0 Z" fill="#8a5a2e" />
+        <text
+          x="0"
+          y="-25"
+          fontSize="9"
+          fontWeight="700"
+          letterSpacing="2"
+          fill="#5e3d22"
+          textAnchor="middle"
+        >
+          N
+        </text>
+      </g>
+
+      {/* — Marker — */}
+      {/* warm glow */}
+      <circle cx="315" cy="248" r="74" fill="url(#lmMarkerGlow)" />
+
+      {/* outer ring */}
+      <circle
+        cx="315"
+        cy="248"
+        r="40"
+        fill="#f6efe2"
+        stroke="#5e3d22"
+        strokeWidth="2"
+      />
+      {/* pine disc */}
+      <circle cx="315" cy="248" r="34" fill="#1e3a2b" />
+
+      {/* meetinghouse glyph (white) — same motif as the hero */}
+      <g transform="translate(315 250)" fill="#f6efe2">
+        <polygon points="-16,4 0,-12 16,4" />
+        <rect x="-13" y="4" width="26" height="16" />
+        <rect x="-3" y="-12" width="6" height="14" />
+        <polygon points="-5,-12 0,-22 5,-12" />
+        <rect x="-1" y="-28" width="2" height="7" />
+        <rect x="-4" y="-26" width="8" height="2" />
+      </g>
+
+      {/* marker label below */}
+      <g textAnchor="middle">
+        <text
+          x="315"
+          y="320"
+          fontSize="15"
+          fontWeight="600"
+          fill="#1d2a22"
+        >
+          Bow Baptist Church
+        </text>
+        <text x="315" y="338" fontSize="12" fill="#5f6b60">
+          1102 Route 5 · Weathersfield Bow
+        </text>
+      </g>
+    </svg>
   );
 }
 
@@ -120,26 +327,30 @@ export default function Contact() {
             </AnimateOnScroll>
           </div>
 
-          {/* Map */}
+          {/* Locator + directions */}
           <AnimateOnScroll delay={150}>
             <div>
-              <div className="rounded-2xl overflow-hidden shadow-lg ring-1 ring-pine-deep/10 mb-5">
-                <iframe
-                  title="Map to Bow Baptist Church"
-                  src={MAP_EMBED}
-                  className="w-full h-[340px] md:h-[420px] block border-0"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+              <div className="rounded-2xl overflow-hidden shadow-lg ring-1 ring-pine-deep/10 mb-5 bg-cream">
+                <LocatorMap />
               </div>
-              <a
-                href={MAP_DIRECTIONS}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center bg-pine text-cream font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full border-2 border-pine hover:bg-pine-mid hover:border-pine-mid hover:-translate-y-0.5 hover:shadow-lg transition-all"
-              >
-                Get Directions
-              </a>
+              <div className="grid sm:grid-cols-2 gap-3">
+                <a
+                  href={MAP_DIRECTIONS}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center bg-pine text-cream font-semibold text-sm tracking-wide uppercase px-6 py-3.5 rounded-full border-2 border-pine hover:bg-pine-mid hover:border-pine-mid hover:-translate-y-0.5 hover:shadow-lg transition-all"
+                >
+                  Get Directions
+                </a>
+                <a
+                  href={MAP_VIEW}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center text-pine font-semibold text-sm tracking-wide uppercase px-6 py-3.5 rounded-full border-2 border-pine/30 hover:border-pine hover:-translate-y-0.5 transition-all"
+                >
+                  Open in Google Maps
+                </a>
+              </div>
             </div>
           </AnimateOnScroll>
         </div>
