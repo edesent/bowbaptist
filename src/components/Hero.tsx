@@ -22,8 +22,12 @@ export default function Hero() {
         <p className="text-xs sm:text-sm font-semibold tracking-[0.32em] uppercase text-gold-pale mb-4 animate-fade-up animation-delay-200">
           Weathersfield Bow · Vermont
         </p>
-        <h1 className="font-serif text-5xl md:text-7xl font-semibold leading-[1.05] mb-6 animate-fade-up animation-delay-400 [text-shadow:0_2px_24px_rgba(10,18,36,0.55)]">
-          Bow Baptist Church
+        <h1 className="flex justify-center mb-6 animate-fade-up animation-delay-400">
+          <img
+            src="/logo-white.png"
+            alt="Bow Baptist Church"
+            className="w-[min(80vw,540px)] h-auto drop-shadow-[0_2px_28px_rgba(10,18,36,0.6)]"
+          />
         </h1>
         <div className="w-20 h-[3px] bg-gold-light mx-auto mb-6 rounded animate-fade-up animation-delay-600" />
         <p className="font-serif text-xl md:text-2xl italic text-white/90 leading-relaxed max-w-xl mx-auto mb-3 animate-fade-up animation-delay-800 [text-shadow:0_1px_12px_rgba(10,18,36,0.55)]">

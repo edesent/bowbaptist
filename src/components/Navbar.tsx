@@ -18,15 +18,6 @@ const navLinks: NavLink[] = [
   },
 ];
 
-function BrandMark({ className = "" }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 40 40" className={className} fill="none" aria-hidden="true">
-      <path d="M2 33 L13 16 L20 25 L28 11 L38 33 Z" fill="currentColor" opacity="0.92" />
-      <path d="M28 11 L28 4 M24.5 7 L31.5 7" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-    </svg>
-  );
-}
-
 export default function Navbar() {
   const pathname = usePathname();
   const isSubPage = pathname !== "/";
@@ -73,12 +64,14 @@ export default function Navbar() {
         <a
           href="#home"
           onClick={(e) => handleLinkClick(e, { href: "#home", label: "Home" })}
-          className="flex items-center gap-2.5 text-white"
+          className="flex items-center text-white"
+          aria-label="Bow Baptist Church — home"
         >
-          <BrandMark className="w-8 h-8 text-gold-light" />
-          <span className="text-sm sm:text-base font-semibold tracking-[0.18em] uppercase text-gold-pale whitespace-nowrap">
-            Bow Baptist Church
-          </span>
+          <img
+            src="/logo-white.png"
+            alt="Bow Baptist Church"
+            className="h-9 sm:h-10 w-auto"
+          />
         </a>
 
         {/* Desktop Menu */}
