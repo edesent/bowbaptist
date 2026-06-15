@@ -74,8 +74,8 @@ export default function HistoryPage() {
       <main className="bg-warm-white py-20 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
           <div className="prose-intro mb-16 text-center">
-            <Peaks className="text-oak-light mx-auto mb-6" />
-            <p className="font-serif text-2xl md:text-3xl italic text-pine-mid leading-snug mb-6">
+            <Peaks className="text-gold-light mx-auto mb-6" />
+            <p className="font-serif text-2xl md:text-3xl italic text-navy-mid leading-snug mb-6">
               “A beacon of the Gospel in the Green Mountains for nearly two hundred years.”
             </p>
             <p className="text-lg text-text-body leading-relaxed">
@@ -88,29 +88,29 @@ export default function HistoryPage() {
 
           {/* Timeline */}
           <div className="relative">
-            <div className="absolute left-[7px] top-2 bottom-2 w-0.5 bg-oak-light/40" aria-hidden="true" />
+            <div className="absolute left-[7px] top-2 bottom-2 w-0.5 bg-gold-light/40" aria-hidden="true" />
             <ul className="space-y-10">
               {milestones.map((m) => (
                 <li key={m.year} className="relative pl-10">
                   <span
-                    className="absolute left-0 top-1.5 w-4 h-4 rounded-full bg-pine ring-4 ring-warm-white"
+                    className="absolute left-0 top-1.5 w-4 h-4 rounded-full bg-navy ring-4 ring-warm-white"
                     aria-hidden="true"
                   />
-                  <p className="font-serif text-xl font-semibold text-barn mb-1.5">{m.year}</p>
+                  <p className="font-serif text-xl font-semibold text-brass mb-1.5">{m.year}</p>
                   <p className="text-text-body leading-relaxed">{m.text}</p>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="mt-16 p-8 bg-cream rounded-2xl border-l-4 border-oak-light text-center">
+          <div className="mt-16 p-8 bg-cream rounded-2xl border-l-4 border-gold-light text-center">
             <p className="text-lg text-text-body leading-relaxed mb-6">
               The next chapter of this story is still being written — and there&rsquo;s a
               place in it for you and your family.
             </p>
             <a
               href="/#contact"
-              className="inline-block bg-barn text-white font-semibold text-sm tracking-wide uppercase px-9 py-3.5 rounded-full hover:bg-barn-dark hover:-translate-y-0.5 hover:shadow-lg transition-all"
+              className="inline-block bg-brass text-white font-semibold text-sm tracking-wide uppercase px-9 py-3.5 rounded-full hover:bg-brass-dark hover:-translate-y-0.5 hover:shadow-lg transition-all"
             >
               Plan a Visit
             </a>

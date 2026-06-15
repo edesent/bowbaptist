@@ -66,7 +66,7 @@ export default function HowToBeSavedPage() {
             {steps.map((s) => (
               <div key={s.n} className="flex gap-5">
                 <div className="flex-shrink-0">
-                  <span className="flex items-center justify-center w-11 h-11 rounded-full bg-pine text-cream font-serif text-lg font-semibold">
+                  <span className="flex items-center justify-center w-11 h-11 rounded-full bg-navy text-cream font-serif text-lg font-semibold">
                     {s.n}
                   </span>
                 </div>
@@ -74,11 +74,11 @@ export default function HowToBeSavedPage() {
                   <h2 className="font-serif text-xl md:text-2xl font-semibold text-text-dark mb-3">
                     {s.title}
                   </h2>
-                  <blockquote className="border-l-4 border-oak-light pl-4 py-1 mb-3">
-                    <p className="font-serif italic text-pine-mid leading-relaxed">
+                  <blockquote className="border-l-4 border-gold-light pl-4 py-1 mb-3">
+                    <p className="font-serif italic text-navy-mid leading-relaxed">
                       &ldquo;{s.verse}&rdquo;
                     </p>
-                    <cite className="text-xs font-semibold tracking-[0.1em] uppercase text-oak not-italic">
+                    <cite className="text-xs font-semibold tracking-[0.1em] uppercase text-gold not-italic">
                       {s.ref}
                     </cite>
                   </blockquote>
@@ -89,7 +89,7 @@ export default function HowToBeSavedPage() {
           </div>
 
           {/* Prayer */}
-          <div className="mt-14 p-8 md:p-10 bg-cream rounded-2xl ring-1 ring-oak-light/30">
+          <div className="mt-14 p-8 md:p-10 bg-cream rounded-2xl ring-1 ring-gold-light/30">
             <h2 className="font-serif text-2xl font-semibold text-text-dark mb-4 text-center">
               Will you call upon Him today?
             </h2>
@@ -99,7 +99,7 @@ export default function HowToBeSavedPage() {
               Jesus and trust Him alone to save you, you might express your faith to God in
               words like these:
             </p>
-            <p className="font-serif italic text-pine leading-relaxed text-lg border-l-4 border-barn pl-5">
+            <p className="font-serif italic text-navy leading-relaxed text-lg border-l-4 border-brass pl-5">
               &ldquo;Dear God, I know that I am a sinner and that my sin deserves
               punishment. I believe that Jesus Christ died for me, was buried, and rose
               again. Right now I turn from my sin and trust You, Lord Jesus, as my Savior.
@@ -116,7 +116,7 @@ export default function HowToBeSavedPage() {
             </p>
             <a
               href="/#contact"
-              className="inline-block bg-barn text-white font-semibold text-sm tracking-wide uppercase px-9 py-3.5 rounded-full hover:bg-barn-dark hover:-translate-y-0.5 hover:shadow-lg transition-all"
+              className="inline-block bg-brass text-white font-semibold text-sm tracking-wide uppercase px-9 py-3.5 rounded-full hover:bg-brass-dark hover:-translate-y-0.5 hover:shadow-lg transition-all"
             >
               Tell Us / Plan a Visit
             </a>

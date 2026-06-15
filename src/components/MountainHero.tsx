@@ -4,10 +4,10 @@
 function Pine({ x, y, s }: { x: number; y: number; s: number }) {
   return (
     <g transform={`translate(${x} ${y}) scale(${s})`}>
-      <rect x="-3" y="0" width="6" height="15" fill="#241a0f" />
-      <polygon points="-22,4 22,4 0,-30" fill="#0f2016" />
-      <polygon points="-17,-18 17,-18 0,-46" fill="#0f2016" />
-      <polygon points="-12,-38 12,-38 0,-62" fill="#0f2016" />
+      <rect x="-3" y="0" width="6" height="15" fill="#2e2410" />
+      <polygon points="-22,4 22,4 0,-30" fill="#0e1c33" />
+      <polygon points="-17,-18 17,-18 0,-46" fill="#0e1c33" />
+      <polygon points="-12,-38 12,-38 0,-62" fill="#0e1c33" />
     </g>
   );
 }
@@ -16,7 +16,7 @@ export default function MountainHero() {
   return (
     <header
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-pine-deep"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-navy-deep"
     >
       {/* ── Scene ─────────────────────────────────────── */}
       <svg
@@ -27,9 +27,9 @@ export default function MountainHero() {
       >
         <defs>
           <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#15323a" />
-            <stop offset="0.42" stopColor="#39554f" />
-            <stop offset="0.64" stopColor="#8a6c47" />
+            <stop offset="0" stopColor="#15273f" />
+            <stop offset="0.42" stopColor="#34507d" />
+            <stop offset="0.64" stopColor="#a07f44" />
             <stop offset="0.8" stopColor="#c98a4e" />
           </linearGradient>
           <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
@@ -51,47 +51,47 @@ export default function MountainHero() {
         {/* far ridge */}
         <path
           d="M0,540 L130,478 L250,512 L380,452 L520,500 L660,448 L820,498 L980,452 L1140,500 L1280,460 L1440,496 L1440,900 L0,900 Z"
-          fill="#5e7d72"
+          fill="#5b78a8"
           opacity="0.92"
         />
 
         {/* drifting mist */}
         <g className="animate-mist">
-          <ellipse cx="640" cy="556" rx="720" ry="34" fill="#dfe7df" opacity="0.18" />
-          <ellipse cx="1080" cy="588" rx="380" ry="22" fill="#dfe7df" opacity="0.14" />
+          <ellipse cx="640" cy="556" rx="720" ry="34" fill="#dde4ee" opacity="0.18" />
+          <ellipse cx="1080" cy="588" rx="380" ry="22" fill="#dde4ee" opacity="0.14" />
         </g>
 
         {/* mid ridge */}
         <path
           d="M0,620 L150,560 L320,610 L480,548 L640,604 L820,556 L1000,610 L1180,560 L1340,606 L1440,580 L1440,900 L0,900 Z"
-          fill="#3f5f4f"
+          fill="#3f567d"
         />
 
         {/* near ridge */}
         <path
           d="M0,710 L200,656 L380,704 L560,648 L720,706 L900,656 L1080,708 L1260,660 L1440,704 L1440,900 L0,900 Z"
-          fill="#21392b"
+          fill="#213a5e"
         />
 
         {/* meetinghouse nestled in the hills */}
         <circle cx="714" cy="672" r="78" fill="url(#churchGlow)" />
         <g>
-          <polygon points="686,672 714,648 742,672" fill="#f4eedf" />
-          <rect x="692" y="672" width="44" height="29" fill="#f4eedf" />
-          <rect x="706" y="628" width="13" height="25" fill="#f4eedf" />
-          <polygon points="703,629 712.5,609 722,629" fill="#f4eedf" />
-          <rect x="711" y="599" width="3" height="11" fill="#f4eedf" />
-          <rect x="708" y="602" width="9" height="3" fill="#f4eedf" />
+          <polygon points="686,672 714,648 742,672" fill="#f3ece0" />
+          <rect x="692" y="672" width="44" height="29" fill="#f3ece0" />
+          <rect x="706" y="628" width="13" height="25" fill="#f3ece0" />
+          <polygon points="703,629 712.5,609 722,629" fill="#f3ece0" />
+          <rect x="711" y="599" width="3" height="11" fill="#f3ece0" />
+          <rect x="708" y="602" width="9" height="3" fill="#f3ece0" />
           {/* glowing windows + door */}
           <rect x="697" y="679" width="6" height="11" rx="1" fill="#ffce72" />
           <rect x="725" y="679" width="6" height="11" rx="1" fill="#ffce72" />
-          <rect x="709" y="685" width="10" height="16" rx="1" fill="#6b4422" />
+          <rect x="709" y="685" width="10" height="16" rx="1" fill="#8a6a30" />
         </g>
 
         {/* foreground hill */}
         <path
           d="M0,812 L260,786 L560,812 L840,782 L1140,812 L1440,790 L1440,900 L0,900 Z"
-          fill="#14261b"
+          fill="#14233f"
         />
 
         {/* framing pines */}
@@ -104,27 +104,27 @@ export default function MountainHero() {
       </svg>
 
       {/* legibility overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-pine-deep/45 via-pine-deep/10 to-pine-deep/55" />
+      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/45 via-navy-deep/10 to-navy-deep/55" />
 
       {/* ── Content ───────────────────────────────────── */}
       <div className="relative z-[2] text-center text-white max-w-3xl px-5 py-10">
-        <p className="text-xs sm:text-sm font-semibold tracking-[0.32em] uppercase text-oak-pale mb-4 animate-fade-up animation-delay-200">
+        <p className="text-xs sm:text-sm font-semibold tracking-[0.32em] uppercase text-gold-pale mb-4 animate-fade-up animation-delay-200">
           Weathersfield Bow · Vermont
         </p>
         <h1 className="font-serif text-5xl md:text-7xl font-semibold leading-[1.05] mb-6 animate-fade-up animation-delay-400 drop-shadow-sm">
           Bow Baptist Church
         </h1>
-        <div className="w-20 h-[3px] bg-oak-light mx-auto mb-6 rounded animate-fade-up animation-delay-600" />
+        <div className="w-20 h-[3px] bg-gold-light mx-auto mb-6 rounded animate-fade-up animation-delay-600" />
         <p className="font-serif text-xl md:text-2xl italic text-white/90 leading-relaxed max-w-xl mx-auto mb-3 animate-fade-up animation-delay-800">
           A gospel light in the hills of Vermont since 1837.
         </p>
-        <p className="text-sm text-oak-pale/90 mb-9 animate-fade-up animation-delay-900">
+        <p className="text-sm text-gold-pale/90 mb-9 animate-fade-up animation-delay-900">
           Bible preaching · Traditional hymns · A welcoming family
         </p>
         <div className="flex gap-4 justify-center flex-wrap animate-fade-up animation-delay-1000">
           <a
             href="#contact"
-            className="inline-block bg-barn text-white font-semibold text-sm tracking-wide uppercase px-9 py-3.5 rounded-full border-2 border-barn hover:bg-barn-dark hover:border-barn-dark hover:-translate-y-0.5 hover:shadow-xl transition-all"
+            className="inline-block bg-brass text-white font-semibold text-sm tracking-wide uppercase px-9 py-3.5 rounded-full border-2 border-brass hover:bg-brass-dark hover:border-brass-dark hover:-translate-y-0.5 hover:shadow-xl transition-all"
           >
             Plan a Visit
           </a>

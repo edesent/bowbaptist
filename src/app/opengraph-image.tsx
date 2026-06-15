@@ -17,10 +17,10 @@ export default function Image() {
           justifyContent: "center",
           textAlign: "center",
           padding: "0 80px",
-          color: "#f5eede",
+          color: "#f3ece0",
           fontFamily: "serif",
           background:
-            "linear-gradient(180deg, #15323a 0%, #33514a 42%, #7d6446 72%, #c98a4e 100%)",
+            "linear-gradient(180deg, #15273f 0%, #34507d 42%, #9c7c3e 72%, #c98a4e 100%)",
         }}
       >
         <div
@@ -40,13 +40,13 @@ export default function Image() {
           style={{
             width: 96,
             height: 5,
-            background: "#b98344",
+            background: "#ccb277",
             borderRadius: 4,
             marginTop: 26,
             marginBottom: 26,
           }}
         />
-        <div style={{ fontSize: 34, fontStyle: "italic", color: "#f1e7d3" }}>
+        <div style={{ fontSize: 34, fontStyle: "italic", color: "#efe4d2" }}>
           A gospel light in the hills of Vermont since 1837
         </div>
       </div>

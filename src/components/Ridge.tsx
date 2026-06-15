@@ -4,11 +4,11 @@
 
 // Key palette hexes (mirror globals.css) for the self-contained Ridge band.
 export const c = {
-  warmWhite: "#fbf8f1",
-  cream: "#f5eede",
-  creamDark: "#e9dcc4",
-  pine: "#1e3a2b",
-  pineDeep: "#14241b",
+  warmWhite: "#faf6ee",
+  cream: "#f3ece0",
+  creamDark: "#e7dcc6",
+  pine: "#1f3354",
+  pineDeep: "#14233f",
 } as const;
 
 export function Ridge({

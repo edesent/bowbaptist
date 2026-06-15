@@ -13,7 +13,7 @@ export default function PageHero({
 }) {
   return (
     <>
-      <section className="relative bg-pine-deep overflow-hidden pt-36 pb-20 md:pt-40 md:pb-24">
+      <section className="relative bg-navy-deep overflow-hidden pt-36 pb-20 md:pt-40 md:pb-24">
         <svg
           viewBox="0 0 1440 500"
           preserveAspectRatio="xMidYMid slice"
@@ -26,14 +26,14 @@ export default function PageHero({
               <stop offset="1" stopColor="#caa15f" stopOpacity="0" />
             </radialGradient>
           </defs>
-          <rect width="1440" height="500" fill="#14241b" />
+          <rect width="1440" height="500" fill="#14233f" />
           <rect width="1440" height="500" fill="url(#phGlow)" />
-          <path d="M0,330 L220,272 L440,324 L660,266 L880,322 L1100,270 L1320,324 L1440,290 L1440,500 L0,500 Z" fill="#1e3a2b" opacity="0.6" />
-          <path d="M0,410 L260,366 L520,412 L780,364 L1040,412 L1300,368 L1440,402 L1440,500 L0,500 Z" fill="#21392b" />
+          <path d="M0,330 L220,272 L440,324 L660,266 L880,322 L1100,270 L1320,324 L1440,290 L1440,500 L0,500 Z" fill="#1f3354" opacity="0.6" />
+          <path d="M0,410 L260,366 L520,412 L780,364 L1040,412 L1300,368 L1440,402 L1440,500 L0,500 Z" fill="#213a5e" />
         </svg>
 
         <div className="relative z-[1] max-w-3xl mx-auto px-6 text-center text-cream">
-          <p className="text-xs font-semibold tracking-[0.28em] uppercase text-oak-pale mb-4">
+          <p className="text-xs font-semibold tracking-[0.28em] uppercase text-gold-pale mb-4">
             {kicker}
           </p>
           <h1 className="font-serif text-4xl md:text-6xl font-semibold leading-[1.08] mb-5">

@@ -4,9 +4,9 @@ import AnimateOnScroll from "./AnimateOnScroll";
 import { Peaks } from "./Ridge";
 
 const MAP_DIRECTIONS =
-  "https://www.google.com/maps/dir/?api=1&destination=1102+Route+5,+Weathersfield,+VT+05156";
+  "https://www.google.com/maps/dir/?api=1&destination=1102+Route+5,+Springfield,+VT+05156";
 const MAP_VIEW =
-  "https://www.google.com/maps/search/?api=1&query=Bow+Baptist+Church,+1102+Route+5,+Weathersfield,+VT+05156";
+  "https://www.google.com/maps/search/?api=1&query=Bow+Baptist+Church,+1102+Route+5,+Springfield,+VT+05156";
 
 function Row({
   title,
@@ -18,7 +18,7 @@ function Row({
   icon: React.ReactNode;
 }) {
   return (
-    <div className="flex gap-5 py-6 border-b border-pine-deep/[.08]">
+    <div className="flex gap-5 py-6 border-b border-navy-deep/[.08]">
       <svg
         viewBox="0 0 48 48"
         fill="none"
@@ -26,7 +26,7 @@ function Row({
         strokeWidth="2.2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="w-11 h-11 flex-shrink-0 text-pine-mid"
+        className="w-11 h-11 flex-shrink-0 text-navy-mid"
       >
         {icon}
       </svg>
@@ -56,13 +56,13 @@ function LocatorMap() {
 
       <defs>
         <linearGradient id="lmBg" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#f7f0e0" />
-          <stop offset="1" stopColor="#ece0c6" />
+          <stop offset="0" stopColor="#f5efe3" />
+          <stop offset="1" stopColor="#e7dcc6" />
         </linearGradient>
         <linearGradient id="lmRiver" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stopColor="#5d8770" />
-          <stop offset="0.5" stopColor="#7c9885" />
-          <stop offset="1" stopColor="#4a7a5e" />
+          <stop offset="0" stopColor="#5b78a8" />
+          <stop offset="0.5" stopColor="#8aa4c4" />
+          <stop offset="1" stopColor="#5b78a8" />
         </linearGradient>
         <radialGradient id="lmMarkerGlow" cx="0.5" cy="0.5" r="0.5">
           <stop offset="0" stopColor="#ffd98a" stopOpacity="0.5" />
@@ -80,14 +80,14 @@ function LocatorMap() {
         width="572"
         height="452"
         fill="none"
-        stroke="#8a5a2e"
+        stroke="#b8985a"
         strokeWidth="1.4"
         strokeDasharray="4 6"
         opacity="0.45"
       />
 
       {/* "Green Mountains" — contour-line elevation, west side */}
-      <g opacity="0.22" stroke="#2f5841" strokeWidth="1.2" fill="none">
+      <g opacity="0.22" stroke="#34507d" strokeWidth="1.2" fill="none">
         <path d="M30,90 Q90,68 160,96" />
         <path d="M22,128 Q86,108 162,134" />
         <path d="M18,170 Q82,150 162,176" />
@@ -102,7 +102,7 @@ function LocatorMap() {
         y="64"
         fontSize="10"
         letterSpacing="3"
-        fill="#2f5841"
+        fill="#34507d"
         opacity="0.7"
       >
         GREEN MOUNTAINS
@@ -115,7 +115,7 @@ function LocatorMap() {
       />
       <path
         d="M548,20 C536,80 558,160 548,240 C538,320 562,400 552,460"
-        stroke="#cfddd2"
+        stroke="#d6e0ee"
         strokeWidth="2"
         fill="none"
         opacity="0.55"
@@ -126,7 +126,7 @@ function LocatorMap() {
         y="244"
         fontSize="10"
         letterSpacing="3"
-        fill="#f5eede"
+        fill="#f3ece0"
         textAnchor="middle"
         transform="rotate(90 560 244)"
       >
@@ -137,17 +137,17 @@ function LocatorMap() {
       <g strokeLinecap="round" fill="none">
         <path
           d="M280,20 C320,90 270,160 308,224 C346,288 280,348 320,420 L320,480"
-          stroke="#5e3d22"
+          stroke="#8a6a30"
           strokeWidth="16"
         />
         <path
           d="M280,20 C320,90 270,160 308,224 C346,288 280,348 320,420 L320,480"
-          stroke="#b98344"
+          stroke="#ccb277"
           strokeWidth="11"
         />
         <path
           d="M280,20 C320,90 270,160 308,224 C346,288 280,348 320,420 L320,480"
-          stroke="#f5eede"
+          stroke="#f3ece0"
           strokeWidth="1.4"
           strokeDasharray="6 7"
         />
@@ -157,22 +157,22 @@ function LocatorMap() {
         y="28"
         fontSize="10"
         letterSpacing="2.5"
-        fill="#5e3d22"
+        fill="#8a6a30"
         textAnchor="end"
       >
         ROUTE 5
       </text>
 
       {/* directional cues */}
-      <text x="320" y="58" fontSize="11" fontStyle="italic" fill="#7e6a52" textAnchor="middle">
+      <text x="320" y="58" fontSize="11" fontStyle="italic" fill="#8a6a30" textAnchor="middle">
         ↑ to Ascutney
       </text>
-      <text x="320" y="466" fontSize="11" fontStyle="italic" fill="#7e6a52" textAnchor="middle">
+      <text x="320" y="466" fontSize="11" fontStyle="italic" fill="#8a6a30" textAnchor="middle">
         to Springfield ↓
       </text>
 
       {/* decorative pines around the marker / frame */}
-      <g fill="#1e3a2b" opacity="0.85">
+      <g fill="#1f3354" opacity="0.85">
         <polygon points="70,440 92,440 81,408" />
         <polygon points="100,452 118,452 109,428" />
         <polygon points="46,448 64,448 55,422" />
@@ -184,16 +184,16 @@ function LocatorMap() {
 
       {/* Compass rose */}
       <g transform="translate(548 56)">
-        <circle r="22" fill="#f5eede" stroke="#8a5a2e" strokeWidth="1.4" opacity="0.85" />
-        <path d="M0,-15 L4,0 L0,15 L-4,0 Z" fill="#5e3d22" />
-        <path d="M0,-15 L4,0 L0,0 Z" fill="#8a5a2e" />
+        <circle r="22" fill="#f3ece0" stroke="#b8985a" strokeWidth="1.4" opacity="0.85" />
+        <path d="M0,-15 L4,0 L0,15 L-4,0 Z" fill="#8a6a30" />
+        <path d="M0,-15 L4,0 L0,0 Z" fill="#b8985a" />
         <text
           x="0"
           y="-25"
           fontSize="9"
           fontWeight="700"
           letterSpacing="2"
-          fill="#5e3d22"
+          fill="#8a6a30"
           textAnchor="middle"
         >
           N
@@ -209,15 +209,15 @@ function LocatorMap() {
         cx="315"
         cy="248"
         r="40"
-        fill="#f6efe2"
-        stroke="#5e3d22"
+        fill="#f5efe3"
+        stroke="#8a6a30"
         strokeWidth="2"
       />
       {/* pine disc */}
-      <circle cx="315" cy="248" r="34" fill="#1e3a2b" />
+      <circle cx="315" cy="248" r="34" fill="#1f3354" />
 
       {/* meetinghouse glyph (white) — same motif as the hero */}
-      <g transform="translate(315 250)" fill="#f6efe2">
+      <g transform="translate(315 250)" fill="#f5efe3">
         <polygon points="-16,4 0,-12 16,4" />
         <rect x="-13" y="4" width="26" height="16" />
         <rect x="-3" y="-12" width="6" height="14" />
@@ -233,12 +233,12 @@ function LocatorMap() {
           y="320"
           fontSize="15"
           fontWeight="600"
-          fill="#1d2a22"
+          fill="#1b2436"
         >
           Bow Baptist Church
         </text>
-        <text x="315" y="338" fontSize="12" fill="#5f6b60">
-          1102 Route 5 · Weathersfield Bow
+        <text x="315" y="338" fontSize="12" fill="#5e6678">
+          1102 Route 5 · Springfield
         </text>
       </g>
     </svg>
@@ -250,10 +250,10 @@ export default function Contact() {
     <section id="contact" className="py-24 md:py-28 bg-cream">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-14">
-          <span className="inline-block text-xs font-bold tracking-[0.22em] uppercase text-oak mb-3">
+          <span className="inline-block text-xs font-bold tracking-[0.22em] uppercase text-gold mb-3">
             Come Worship With Us
           </span>
-          <Peaks className="text-oak-light mb-5" />
+          <Peaks className="text-gold-light mb-5" />
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-text-dark mb-4">
             Plan Your Visit
           </h2>
@@ -277,7 +277,7 @@ export default function Contact() {
                 }
               >
                 1102 Route 5<br />
-                Weathersfield Bow, VT 05156
+                Springfield, VT 05156
               </Row>
             </AnimateOnScroll>
 
@@ -290,7 +290,7 @@ export default function Contact() {
               >
                 <a
                   href="tel:+18025464902"
-                  className="text-barn font-semibold hover:text-barn-dark transition-colors"
+                  className="text-brass font-semibold hover:text-brass-dark transition-colors"
                 >
                   (802) 546-4902
                 </a>
@@ -313,7 +313,7 @@ export default function Contact() {
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={300}>
-              <div className="mt-8 p-7 bg-warm-white rounded-xl border-l-4 border-oak-light shadow-sm">
+              <div className="mt-8 p-7 bg-warm-white rounded-xl border-l-4 border-gold-light shadow-sm">
                 <h3 className="font-serif text-lg font-semibold text-text-dark mb-2">
                   A note for first-time guests
                 </h3>
@@ -330,7 +330,7 @@ export default function Contact() {
           {/* Locator + directions */}
           <AnimateOnScroll delay={150}>
             <div>
-              <div className="rounded-2xl overflow-hidden shadow-lg ring-1 ring-pine-deep/10 mb-5 bg-cream">
+              <div className="rounded-2xl overflow-hidden shadow-lg ring-1 ring-navy-deep/10 mb-5 bg-cream">
                 <LocatorMap />
               </div>
               <div className="grid sm:grid-cols-2 gap-3">
@@ -338,7 +338,7 @@ export default function Contact() {
                   href={MAP_DIRECTIONS}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center bg-pine text-cream font-semibold text-sm tracking-wide uppercase px-6 py-3.5 rounded-full border-2 border-pine hover:bg-pine-mid hover:border-pine-mid hover:-translate-y-0.5 hover:shadow-lg transition-all"
+                  className="block text-center bg-navy text-cream font-semibold text-sm tracking-wide uppercase px-6 py-3.5 rounded-full border-2 border-navy hover:bg-navy-mid hover:border-navy-mid hover:-translate-y-0.5 hover:shadow-lg transition-all"
                 >
                   Get Directions
                 </a>
@@ -346,7 +346,7 @@ export default function Contact() {
                   href={MAP_VIEW}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center text-pine font-semibold text-sm tracking-wide uppercase px-6 py-3.5 rounded-full border-2 border-pine/30 hover:border-pine hover:-translate-y-0.5 transition-all"
+                  className="block text-center text-navy font-semibold text-sm tracking-wide uppercase px-6 py-3.5 rounded-full border-2 border-navy/30 hover:border-navy hover:-translate-y-0.5 transition-all"
                 >
                   Open in Google Maps
                 </a>

@@ -33,7 +33,7 @@ function BrandMark({ className = "" }: { className?: string }) {
 
 export default function Footer() {
   return (
-    <footer className="bg-pine-deep text-cream/70">
+    <footer className="bg-navy-deep text-cream/70">
       <Ridge top={c.cream} bottom={c.pineDeep} />
 
       <div className="max-w-7xl mx-auto px-6 pt-6">
@@ -41,7 +41,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
-              <BrandMark className="w-9 h-9 text-oak-light" />
+              <BrandMark className="w-9 h-9 text-gold-light" />
               <span className="font-serif text-lg font-semibold text-cream leading-tight">
                 Bow Baptist
                 <br />
@@ -50,10 +50,10 @@ export default function Footer() {
             </div>
             <p className="text-sm leading-relaxed">
               1102 Route 5<br />
-              Weathersfield Bow, VT 05156<br />
+              Springfield, VT 05156<br />
               <a
                 href="tel:+18025464902"
-                className="text-oak-pale hover:text-oak-light transition-colors"
+                className="text-gold-pale hover:text-gold-light transition-colors"
               >
                 (802) 546-4902
               </a>
@@ -71,7 +71,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-sm text-cream/60 hover:text-oak-pale sm:hover:pl-1 transition-all"
+                    className="text-sm text-cream/60 hover:text-gold-pale sm:hover:pl-1 transition-all"
                   >
                     {link.label}
                   </a>
@@ -101,7 +101,7 @@ export default function Footer() {
               href={GIVE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-barn text-white text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-barn-dark transition-all mb-6"
+              className="inline-block bg-brass text-white text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-brass-dark transition-all mb-6"
             >
               Give Online
             </a>
@@ -111,7 +111,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/[.08] text-cream/70 hover:bg-oak-light hover:text-pine-deep hover:-translate-y-0.5 transition-all"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/[.08] text-cream/70 hover:bg-gold-light hover:text-navy-deep hover:-translate-y-0.5 transition-all"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />

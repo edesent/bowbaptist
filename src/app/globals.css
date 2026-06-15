@@ -4,41 +4,42 @@
   --font-sans: var(--font-inter);
   --font-serif: var(--font-fraunces);
 
-  /* ── Green Mountain palette ─────────────────────────────
-     Vermont-forward: pine green + oak wood + barn-red accent
-     + autumn harvest gold, over warm cream/parchment. */
+  /* ── Bow Baptist brand palette ──────────────────────────
+     Drawn from the church's own identity: deep navy + warm
+     gold over cream/parchment. Matches the BOW logo (navy
+     steeple) and their print/social graphics. */
 
-  /* Pine greens (primary brand — headers, footer, depth) */
-  --color-pine-deep: #14241b;
-  --color-pine: #1e3a2b;
-  --color-pine-mid: #2f5841;
-  --color-pine-light: #4a7a5e;
-  --color-sage: #8aa896;
+  /* Navy (primary brand — headers, footer, depth) */
+  --color-navy-deep: #14233f;
+  --color-navy: #1f3354;
+  --color-navy-mid: #34507d;
+  --color-navy-light: #5b78a8;
+  --color-sky: #aebfd6;
 
-  /* Oak / warm wood */
-  --color-oak-dark: #5e3d22;
-  --color-oak: #8a5a2e;
-  --color-oak-light: #b98344;
-  --color-oak-pale: #d8b483;
+  /* Gold (warm accent — rules, marks, secondary emphasis) */
+  --color-gold-dark: #8a6a30;
+  --color-gold: #b8985a;
+  --color-gold-light: #ccb277;
+  --color-gold-pale: #e6d6ad;
 
-  /* Barn-red accent (calls to action, emphasis) */
-  --color-barn: #9c3b2c;
-  --color-barn-dark: #7e2d20;
+  /* Brass (rich amber — calls to action, emphasis) */
+  --color-brass: #b07e2e;
+  --color-brass-dark: #8c601f;
 
-  /* Autumn harvest gold (foliage warmth — used sparingly) */
-  --color-harvest: #cd8a3a;
-  --color-harvest-light: #e3aa5f;
+  /* Brass tints (warmth — used sparingly) */
+  --color-brass-light: #cd9a45;
+  --color-brass-pale: #e3c07f;
 
   /* Cream / parchment surfaces */
-  --color-cream: #f5eede;
-  --color-cream-dark: #e9dcc4;
-  --color-warm-white: #fbf8f1;
+  --color-cream: #f3ece0;
+  --color-cream-dark: #e7dcc6;
+  --color-warm-white: #faf6ee;
 
-  /* Ink */
-  --color-text-dark: #1d2a22;
-  --color-text-body: #3a473e;
-  --color-text-light: #5f6b60;
-  --color-text-muted: #8b8f84;
+  /* Ink (navy-charcoal) */
+  --color-text-dark: #1b2436;
+  --color-text-body: #3a4357;
+  --color-text-light: #5e6678;
+  --color-text-muted: #8a8f9c;
 }
 
 html {

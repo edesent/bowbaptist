@@ -55,7 +55,7 @@ export default function Visit() {
         {/* Intro: photo + heading */}
         <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center mb-16">
           <AnimateOnScroll>
-            <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-pine-deep/10">
+            <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-navy-deep/10">
               <img
                 src="/fellowship.jpg"
                 alt="A warm welcome among the church family at Bow Baptist Church"
@@ -66,10 +66,10 @@ export default function Visit() {
 
           <AnimateOnScroll delay={150}>
             <div>
-              <span className="inline-block text-xs font-bold tracking-[0.22em] uppercase text-oak mb-3">
+              <span className="inline-block text-xs font-bold tracking-[0.22em] uppercase text-gold mb-3">
                 Your First Visit
               </span>
-              <Peaks className="text-oak-light mb-5" />
+              <Peaks className="text-gold-light mb-5" />
               <h2 className="font-serif text-4xl md:text-5xl font-semibold text-text-dark mb-5">
                 What to Expect
               </h2>
@@ -86,8 +86,8 @@ export default function Visit() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {expectations.map((item, i) => (
             <AnimateOnScroll key={item.title} delay={i * 80}>
-              <div className="h-full bg-warm-white rounded-2xl p-8 shadow-sm ring-1 ring-pine-deep/[.06] hover:-translate-y-1 hover:shadow-md transition-all">
-                <div className="w-14 h-14 rounded-xl bg-pine/[.08] flex items-center justify-center mb-5">
+              <div className="h-full bg-warm-white rounded-2xl p-8 shadow-sm ring-1 ring-navy-deep/[.06] hover:-translate-y-1 hover:shadow-md transition-all">
+                <div className="w-14 h-14 rounded-xl bg-navy/[.08] flex items-center justify-center mb-5">
                   <svg
                     viewBox="0 0 48 48"
                     fill="none"
@@ -95,7 +95,7 @@ export default function Visit() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="w-7 h-7 text-pine-mid"
+                    className="w-7 h-7 text-navy-mid"
                   >
                     {item.icon}
                   </svg>

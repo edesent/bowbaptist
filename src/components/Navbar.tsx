@@ -64,7 +64,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || isSubPage
-          ? "bg-pine-deep/[.97] py-3 shadow-lg backdrop-blur-sm"
+          ? "bg-navy-deep/[.97] py-3 shadow-lg backdrop-blur-sm"
           : "py-5"
       }`}
     >
@@ -75,8 +75,8 @@ export default function Navbar() {
           onClick={(e) => handleLinkClick(e, { href: "#home", label: "Home" })}
           className="flex items-center gap-2.5 text-white"
         >
-          <BrandMark className="w-8 h-8 text-oak-light" />
-          <span className="text-sm sm:text-base font-semibold tracking-[0.18em] uppercase text-oak-pale whitespace-nowrap">
+          <BrandMark className="w-8 h-8 text-gold-light" />
+          <span className="text-sm sm:text-base font-semibold tracking-[0.18em] uppercase text-gold-pale whitespace-nowrap">
             Bow Baptist Church
           </span>
         </a>
@@ -100,7 +100,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={(e) => handleLinkClick(e, { href: "#contact", label: "Contact" })}
-              className="ml-2 bg-barn text-white text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-barn-dark hover:-translate-y-0.5 transition-all"
+              className="ml-2 bg-brass text-white text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-brass-dark hover:-translate-y-0.5 transition-all"
             >
               Plan a Visit
             </a>
@@ -121,7 +121,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed lg:hidden top-0 right-0 w-72 h-screen bg-pine-deep pt-20 px-8 shadow-2xl transition-transform duration-300 ${
+          className={`fixed lg:hidden top-0 right-0 w-72 h-screen bg-navy-deep pt-20 px-8 shadow-2xl transition-transform duration-300 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -143,7 +143,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={(e) => handleLinkClick(e, { href: "#contact", label: "Contact" })}
-                className="block text-center bg-barn text-white font-semibold px-6 py-3 rounded-full hover:bg-barn-dark transition-all"
+                className="block text-center bg-brass text-white font-semibold px-6 py-3 rounded-full hover:bg-brass-dark transition-all"
               >
                 Plan a Visit
               </a>

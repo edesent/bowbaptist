@@ -22,7 +22,7 @@ const churchSchema = {
   address: {
     "@type": "PostalAddress",
     streetAddress: "1102 Route 5",
-    addressLocality: "Weathersfield",
+    addressLocality: "Springfield",
     addressRegion: "VT",
     postalCode: "05156",
     addressCountry: "US",
@@ -56,7 +56,7 @@ const churchSchema = {
       location: {
         "@type": "Place",
         name: "Bow Baptist Church",
-        address: "1102 Route 5, Weathersfield Bow, VT 05156",
+        address: "1102 Route 5, Springfield, VT 05156",
       },
     },
     {
@@ -67,7 +67,7 @@ const churchSchema = {
       location: {
         "@type": "Place",
         name: "Bow Baptist Church",
-        address: "1102 Route 5, Weathersfield Bow, VT 05156",
+        address: "1102 Route 5, Springfield, VT 05156",
       },
     },
     {
@@ -78,7 +78,7 @@ const churchSchema = {
       location: {
         "@type": "Place",
         name: "Bow Baptist Church",
-        address: "1102 Route 5, Weathersfield Bow, VT 05156",
+        address: "1102 Route 5, Springfield, VT 05156",
       },
     },
     {
@@ -89,7 +89,7 @@ const churchSchema = {
       location: {
         "@type": "Place",
         name: "Bow Baptist Church",
-        address: "1102 Route 5, Weathersfield Bow, VT 05156",
+        address: "1102 Route 5, Springfield, VT 05156",
       },
     },
   ],

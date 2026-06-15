@@ -65,7 +65,7 @@ const services: Service[] = [
 
 export default function ServiceTimes() {
   return (
-    <section id="services" className="relative py-24 overflow-hidden bg-pine-deep">
+    <section id="services" className="relative py-24 overflow-hidden bg-navy-deep">
       {/* mountain backdrop */}
       <svg
         viewBox="0 0 1440 600"
@@ -79,18 +79,18 @@ export default function ServiceTimes() {
             <stop offset="1" stopColor="#caa15f" stopOpacity="0" />
           </radialGradient>
         </defs>
-        <rect width="1440" height="600" fill="#14241b" />
+        <rect width="1440" height="600" fill="#14233f" />
         <rect width="1440" height="600" fill="url(#stGlow)" />
-        <path d="M0,420 L220,360 L420,408 L640,348 L860,404 L1080,352 L1300,406 L1440,372 L1440,600 L0,600 Z" fill="#1e3a2b" opacity="0.7" />
-        <path d="M0,500 L260,452 L520,500 L780,448 L1040,500 L1300,456 L1440,492 L1440,600 L0,600 Z" fill="#21392b" />
+        <path d="M0,420 L220,360 L420,408 L640,348 L860,404 L1080,352 L1300,406 L1440,372 L1440,600 L0,600 Z" fill="#1f3354" opacity="0.7" />
+        <path d="M0,500 L260,452 L520,500 L780,448 L1040,500 L1300,456 L1440,492 L1440,600 L0,600 Z" fill="#213a5e" />
       </svg>
 
       <div className="relative z-[1] max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-14">
-          <span className="inline-block text-xs font-bold tracking-[0.22em] uppercase text-oak-pale mb-3">
+          <span className="inline-block text-xs font-bold tracking-[0.22em] uppercase text-gold-pale mb-3">
             Gather With Us
           </span>
-          <Peaks className="text-oak-light mb-5" />
+          <Peaks className="text-gold-light mb-5" />
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white mb-4">
             Service Times
           </h2>
@@ -105,23 +105,23 @@ export default function ServiceTimes() {
               <div
                 className={`relative h-full rounded-2xl p-7 text-center transition-all hover:-translate-y-1 hover:shadow-2xl ${
                   s.featured
-                    ? "bg-oak/20 border border-oak-light/40"
+                    ? "bg-gold/20 border border-gold-light/40"
                     : "bg-white/[.05] border border-white/10 hover:bg-white/[.08]"
                 }`}
               >
                 {s.featured && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-barn text-white text-[0.62rem] font-bold tracking-[0.12em] uppercase px-4 py-1 rounded-full">
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-brass text-white text-[0.62rem] font-bold tracking-[0.12em] uppercase px-4 py-1 rounded-full">
                     Main Service
                   </span>
                 )}
-                <div className={`flex justify-center mb-4 ${s.featured ? "text-oak-light" : "text-sage"}`}>
+                <div className={`flex justify-center mb-4 ${s.featured ? "text-gold-light" : "text-sky"}`}>
                   {s.icon}
                 </div>
                 <p className="text-[0.7rem] font-semibold tracking-[0.18em] uppercase text-cream/50 mb-1">
                   {s.day}
                 </p>
                 <h3 className="font-serif text-lg font-semibold text-white mb-1">{s.title}</h3>
-                <p className="text-2xl font-bold text-oak-light mb-3">{s.time}</p>
+                <p className="text-2xl font-bold text-gold-light mb-3">{s.time}</p>
                 <p className="text-sm text-cream/60 leading-relaxed">{s.desc}</p>
               </div>
             </AnimateOnScroll>
@@ -129,8 +129,8 @@ export default function ServiceTimes() {
         </div>
 
         <p className="text-center text-cream/50 text-sm mt-12">
-          1102 Route 5, Weathersfield Bow, VT 05156 ·{" "}
-          <a href="tel:+18025464902" className="text-oak-pale hover:text-oak-light transition-colors">
+          1102 Route 5, Springfield, VT 05156 ·{" "}
+          <a href="tel:+18025464902" className="text-gold-pale hover:text-gold-light transition-colors">
             (802) 546-4902
           </a>
         </p>

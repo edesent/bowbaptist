@@ -50,7 +50,7 @@ export default function BeliefsPage() {
         kicker="Our Statement of Faith"
         title="What We Believe"
         subtitle="We are an Independent Baptist church, standing on the King James Bible and the great fundamentals of the Christian faith."
-        bottom="#f5eede"
+        bottom="#f3ece0"
       />
 
       <main className="bg-cream py-20 md:py-24">
@@ -59,10 +59,10 @@ export default function BeliefsPage() {
             {beliefs.map((b, i) => (
               <div
                 key={b.title}
-                className="bg-warm-white rounded-2xl p-8 shadow-sm ring-1 ring-pine-deep/[.06]"
+                className="bg-warm-white rounded-2xl p-8 shadow-sm ring-1 ring-navy-deep/[.06]"
               >
                 <div className="flex items-baseline gap-4 mb-3">
-                  <span className="font-serif text-2xl font-semibold text-oak-light leading-none">
+                  <span className="font-serif text-2xl font-semibold text-gold-light leading-none">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h2 className="font-serif text-xl md:text-2xl font-semibold text-text-dark">
@@ -74,7 +74,7 @@ export default function BeliefsPage() {
                   {b.refs.map((r) => (
                     <span
                       key={r}
-                      className="text-xs font-semibold text-pine-mid bg-pine/[.07] px-3 py-1.5 rounded-full"
+                      className="text-xs font-semibold text-navy-mid bg-navy/[.07] px-3 py-1.5 rounded-full"
                     >
                       {r}
                     </span>
@@ -84,7 +84,7 @@ export default function BeliefsPage() {
             ))}
           </div>
 
-          <div className="mt-14 p-8 bg-pine text-cream rounded-2xl text-center">
+          <div className="mt-14 p-8 bg-navy text-cream rounded-2xl text-center">
             <h2 className="font-serif text-2xl font-semibold mb-3">
               Do you know that you have eternal life?
             </h2>
@@ -94,7 +94,7 @@ export default function BeliefsPage() {
             </p>
             <a
               href="/how-to-be-saved"
-              className="inline-block bg-barn text-white font-semibold text-sm tracking-wide uppercase px-9 py-3.5 rounded-full hover:bg-barn-dark hover:-translate-y-0.5 hover:shadow-lg transition-all"
+              className="inline-block bg-brass text-white font-semibold text-sm tracking-wide uppercase px-9 py-3.5 rounded-full hover:bg-brass-dark hover:-translate-y-0.5 hover:shadow-lg transition-all"
             >
               How to Be Saved
             </a>
