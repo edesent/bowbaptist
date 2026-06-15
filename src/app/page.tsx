@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import MountainHero from "@/components/MountainHero";
+import Hero from "@/components/Hero";
 import Welcome from "@/components/Welcome";
 import ServiceTimes from "@/components/ServiceTimes";
 import Visit from "@/components/Visit";
@@ -103,7 +103,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(churchSchema) }}
       />
       <Navbar />
-      <MountainHero />
+      <Hero />
       <Welcome />
       <Ridge top={c.warmWhite} bottom={c.pineDeep} />
       <ServiceTimes />
