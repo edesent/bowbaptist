@@ -84,7 +84,7 @@ const churchSchema = {
     {
       "@type": "Event",
       name: "Wednesday Prayer Meeting",
-      startDate: "2026-06-03T19:00",
+      startDate: "2026-06-03T18:00",
       eventSchedule: { "@type": "Schedule", repeatFrequency: "P1W", byDay: "Wednesday" },
       location: {
         "@type": "Place",
