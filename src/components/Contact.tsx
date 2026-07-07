@@ -308,7 +308,7 @@ export default function Contact() {
                 }
               >
                 <span className="block">Sunday — Sunday School 10 AM · Worship 11 AM · Evening 6 PM</span>
-                <span className="block">Wednesday — Prayer Meeting 7 PM</span>
+                <span className="block">Wednesday — Prayer Meeting 6 PM</span>
               </Row>
             </AnimateOnScroll>
 
