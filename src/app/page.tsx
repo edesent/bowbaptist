@@ -43,8 +43,8 @@ const churchSchema = {
     {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: "Wednesday",
-      opens: "19:00",
-      closes: "20:00",
+      opens: "18:00",
+      closes: "19:00",
     },
   ],
   event: [
