@@ -51,7 +51,7 @@ const services: Service[] = [
   },
   {
     title: "Prayer Meeting",
-    time: "7:00 PM",
+    time: "6:00 PM",
     day: "Wednesday",
     desc: "Midweek Bible study and prayer to encourage one another in the faith.",
     icon: (
