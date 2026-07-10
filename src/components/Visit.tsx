@@ -11,7 +11,7 @@ export default function Visit() {
           <AnimateOnScroll>
             <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-navy-deep/10">
               <img
-                src="/special-events-august-8.png"
+                src="/family-fun-day-fb.png"
                 alt="Special event at Bow Baptist Church on August 8"
                 className="w-full aspect-[4/5] object-cover block"
               />
