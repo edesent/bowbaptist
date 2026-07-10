@@ -8,7 +8,7 @@ type NavLink = { href: string; label: string; external?: boolean };
 const navLinks: NavLink[] = [
   { href: "#welcome", label: "Welcome" },
   { href: "#services", label: "Service Times" },
-  { href: "#visit", label: "What to Expect" },
+  { href: "#visit", label: "Special Events" },
   { href: "/history", label: "Our Story" },
   { href: "/beliefs", label: "Beliefs" },
   {
