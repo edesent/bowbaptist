@@ -38,26 +38,14 @@ export default function PastorPage() {
           </div>
 
           <div className="grid md:grid-cols-[300px_1fr] gap-12 items-start">
-            {/* Portrait placeholder — swap this <svg> for an <img src="/pastor.jpg" .../> when a photo is available */}
             <div className="mx-auto md:mx-0 w-full max-w-[300px]">
               <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-navy-deep/10">
-                <svg viewBox="0 0 300 360" className="w-full block" aria-hidden="true">
-                  <defs>
-                    <linearGradient id="pPanel" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0" stopColor="#34507d" />
-                      <stop offset="1" stopColor="#1f3354" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="300" height="360" fill="url(#pPanel)" />
-                  <g fill="#cdbf9b" opacity="0.9">
-                    <circle cx="150" cy="140" r="52" />
-                    <path d="M70 320c0-46 36-82 80-82s80 36 80 82z" />
-                  </g>
-                </svg>
+                <img
+                  src="/img-4378.jpeg"
+                  alt="Pastor Wesley Allen with his family"
+                  className="w-full h-auto block"
+                />
               </div>
-              <p className="text-center text-xs text-text-muted mt-3 italic">
-                A photo of Pastor Allen will appear here.
-              </p>
             </div>
 
             {/* Bio */}
