@@ -15,11 +15,11 @@ export default function Hero() {
 
       <div className="relative z-[2] w-full max-w-7xl mx-auto px-6 pt-28 pb-20">
         <div className="max-w-2xl text-navy-deep">
-          <div className="mb-5 w-[min(72vw,430px)] drop-shadow-[0_4px_18px_rgba(0,0,0,0.18)]">
+          <div className="mb-5 ml-1 sm:ml-2 drop-shadow-[0_4px_18px_rgba(0,0,0,0.18)]">
             <img
-              src="/logo.png"
+              src="/logo-line.png"
               alt="Bow Baptist Church"
-              className="w-full h-auto object-contain mix-blend-multiply"
+              className="w-[min(66vw,390px)] h-auto object-contain mix-blend-multiply"
             />
           </div>
 
