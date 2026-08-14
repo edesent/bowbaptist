@@ -1,6 +1,5 @@
 import { Ridge, c } from "./Ridge";
 
-// TODO (Pastor Eli / church): replace with the church's real Facebook page URL.
 const FACEBOOK_URL =
   "https://www.facebook.com/search/top?q=Bow%20Baptist%20Church%20Vermont";
 const GIVE_URL = "https://secure.anedot.com/bow-baptist-church-vt/donate";
@@ -22,31 +21,28 @@ const serviceTimes = [
   { label: "Wednesday Prayer", time: "6:00 PM" },
 ];
 
-function BrandMark({ className = "" }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 40 40" className={className} fill="none" aria-hidden="true">
-      <path d="M2 33 L13 16 L20 25 L28 11 L38 33 Z" fill="currentColor" opacity="0.92" />
-      <path d="M28 11 L28 4 M24.5 7 L31.5 7" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-    </svg>
-  );
-}
-
 export default function Footer() {
   return (
     <footer className="bg-navy-deep text-cream/70">
       <Ridge top={c.cream} bottom={c.pineDeep} />
 
-      <div className="max-w-7xl mx-auto px-6 pt-6">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-14 border-b border-white/[.08]">
-          {/* Brand */}
+      <div className="max-w-7xl mx-auto px-6 pt-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-14 border-b border-white/[.1]">
           <div>
-            <div className="inline-block bg-white/95 rounded-xl px-3 py-2 mb-4 shadow-md">
-              <img
-                src="/logo.png"
-                alt="Bow Baptist Church"
-                className="w-[210px] h-auto object-contain"
-              />
+            <div className="flex items-center gap-3 mb-5">
+              <div className="w-16 h-16 rounded-full overflow-hidden bg-white flex items-center justify-center shrink-0">
+                <img
+                  src="/logo.png"
+                  alt="Bow Baptist Church"
+                  className="w-[150%] max-w-none h-[150%] object-cover object-top"
+                />
+              </div>
+              <div className="text-white leading-none">
+                <div className="font-serif text-2xl tracking-[0.16em]">BOW</div>
+                <div className="text-[10px] tracking-[0.3em] uppercase mt-1">Baptist Church</div>
+              </div>
             </div>
+            <p className="font-serif text-lg text-white mb-3">The Church That Cares.</p>
             <p className="text-sm leading-relaxed">
               1102 Route 5<br />
               Springfield, VT 05156<br />
@@ -57,12 +53,8 @@ export default function Footer() {
                 (802) 546-4902
               </a>
             </p>
-            <p className="text-xs tracking-[0.18em] uppercase text-cream/40 mt-4">
-              A gospel light since 1837
-            </p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="font-serif text-base font-semibold text-cream mb-5">Explore</h4>
             <ul className="space-y-2.5">
@@ -79,7 +71,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Service Times */}
           <div>
             <h4 className="font-serif text-base font-semibold text-cream mb-5">Service Times</h4>
             <ul className="space-y-2.5">
@@ -93,14 +84,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Connect */}
           <div>
             <h4 className="font-serif text-base font-semibold text-cream mb-5">Connect</h4>
             <a
               href={GIVE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-brass text-white text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-brass-dark transition-all mb-6"
+              className="inline-block border border-white/70 text-white text-sm font-semibold px-6 py-2.5 rounded-md hover:bg-white hover:text-navy-deep transition-all mb-6"
             >
               Give Online
             </a>
@@ -110,7 +100,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/[.08] text-cream/70 hover:bg-gold-light hover:text-navy-deep hover:-translate-y-0.5 transition-all"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/[.08] text-cream/70 hover:bg-white hover:text-navy-deep hover:-translate-y-0.5 transition-all"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
@@ -118,8 +108,7 @@ export default function Footer() {
               </a>
             </div>
             <p className="text-sm italic text-cream/40 leading-relaxed">
-              &ldquo;I was glad when they said unto me, Let us go into the house of the
-              LORD.&rdquo;
+              &ldquo;I was glad when they said unto me, Let us go into the house of the LORD.&rdquo;
               <span className="not-italic text-cream/30 block mt-1">— Psalm 122:1</span>
             </p>
           </div>
