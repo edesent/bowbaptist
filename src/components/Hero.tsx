@@ -19,7 +19,7 @@ export default function Hero() {
             <img
               src="/logo-line.png"
               alt="Bow Baptist Church"
-              className="w-[min(70vw,430px)] h-auto object-contain"
+              className="w-[min(66vw,390px)] h-auto object-contain"
             />
           </div>
 
