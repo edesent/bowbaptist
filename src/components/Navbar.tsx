@@ -56,27 +56,30 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || isSubPage
           ? "bg-navy-deep/[.97] py-3 shadow-lg backdrop-blur-sm"
-          : "py-5"
+          : "bg-navy-deep/95 py-3"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        {/* Brand */}
         <a
           href="#home"
           onClick={(e) => handleLinkClick(e, { href: "#home", label: "Home" })}
-          className="flex items-center text-white"
+          className="flex items-center gap-3 text-white"
           aria-label="Bow Baptist Church — home"
         >
-          <div className="bg-white/95 rounded-lg px-3 py-1.5 shadow-md">
+          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden bg-white flex items-center justify-center shrink-0">
             <img
               src="/logo.png"
               alt="Bow Baptist Church"
-              className="w-[210px] sm:w-[235px] h-auto object-contain"
+              className="w-[150%] max-w-none h-[150%] object-cover object-top"
             />
+          </div>
+          <div className="hidden sm:block leading-none">
+            <div className="font-serif text-2xl tracking-[0.16em]">BOW</div>
+            <div className="text-[10px] tracking-[0.3em] uppercase mt-1">Baptist Church</div>
+            <div className="text-[11px] text-white/75 mt-2 normal-case tracking-normal">The Church that cares.</div>
           </div>
         </a>
 
-        {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center gap-1">
           {navLinks.map((link) => (
             <li key={link.href}>
@@ -95,14 +98,13 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={(e) => handleLinkClick(e, { href: "#contact", label: "Contact" })}
-              className="ml-2 bg-brass text-white text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-brass-dark hover:-translate-y-0.5 transition-all"
+              className="ml-2 border border-white/80 text-white text-sm font-semibold px-6 py-2.5 rounded-md hover:bg-white hover:text-navy-deep transition-all"
             >
               Plan a Visit
             </a>
           </li>
         </ul>
 
-        {/* Mobile Toggle */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="lg:hidden flex flex-col gap-1.5 p-2"
@@ -114,7 +116,6 @@ export default function Navbar() {
           <span className={`w-6 h-0.5 bg-white rounded transition-all ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
 
-        {/* Mobile Menu */}
         <div
           className={`fixed lg:hidden top-0 right-0 w-72 h-screen bg-navy-deep pt-20 px-8 shadow-2xl transition-transform duration-300 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
@@ -138,7 +139,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={(e) => handleLinkClick(e, { href: "#contact", label: "Contact" })}
-                className="block text-center bg-brass text-white font-semibold px-6 py-3 rounded-full hover:bg-brass-dark transition-all"
+                className="block text-center border border-white/80 text-white font-semibold px-6 py-3 rounded-md hover:bg-white hover:text-navy-deep transition-all"
               >
                 Plan a Visit
               </a>
