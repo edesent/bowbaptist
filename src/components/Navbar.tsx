@@ -55,7 +55,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || isSubPage
-          ? "bg-navy-deep/[.97] py-3 shadow-lg backdrop-blur-sm"
+          ? "bg-navy-deep/[.98] py-3 shadow-lg backdrop-blur-sm"
           : "bg-navy-deep/95 py-3"
       }`}
     >
@@ -66,16 +66,11 @@ export default function Navbar() {
           className="flex items-center text-white"
           aria-label="Bow Baptist Church — home"
         >
-          <div className="flex flex-col items-start">
-            <img
-              src="/logo-white.png"
-              alt="Bow Baptist Church"
-              className="w-[185px] sm:w-[220px] h-auto object-contain"
-            />
-            <span className="hidden sm:block text-[11px] text-white/80 mt-1 ml-[66px]">
-              The Church that cares.
-            </span>
-          </div>
+          <img
+            src="/logo-white.png"
+            alt="Bow Baptist Church"
+            className="w-[205px] sm:w-[225px] h-auto object-contain drop-shadow-[0_3px_14px_rgba(0,0,0,0.45)]"
+          />
         </a>
 
         <ul className="hidden lg:flex items-center gap-1">
