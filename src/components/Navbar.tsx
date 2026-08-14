@@ -67,9 +67,9 @@ export default function Navbar() {
           aria-label="Bow Baptist Church — home"
         >
           <img
-            src="/logo.png"
+            src="/logo-white.png"
             alt="Bow Baptist Church"
-            className="w-[205px] sm:w-[225px] h-auto object-contain contrast-125 brightness-110 invert mix-blend-screen drop-shadow-[0_3px_14px_rgba(0,0,0,0.45)]"
+            className="w-[205px] sm:w-[225px] h-auto object-contain drop-shadow-[0_3px_14px_rgba(0,0,0,0.45)]"
           />
           <span className="text-[11px] sm:text-xs text-white/80 mt-1 ml-1">The Church That Cares.</span>
         </a>
