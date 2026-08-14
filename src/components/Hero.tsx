@@ -17,9 +17,9 @@ export default function Hero() {
         <div className="max-w-2xl text-navy-deep">
           <div className="mb-5 ml-1 sm:ml-2 drop-shadow-[0_4px_18px_rgba(0,0,0,0.18)]">
             <img
-              src="/logo.png"
+              src="/logo-line.png"
               alt="Bow Baptist Church"
-              className="w-[min(66vw,390px)] h-auto object-contain contrast-125 brightness-105 mix-blend-multiply"
+              className="w-[min(66vw,390px)] h-auto object-contain mix-blend-multiply"
             />
           </div>
 
