@@ -40,13 +40,12 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-14 border-b border-white/[.08]">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2.5 mb-4">
-              <BrandMark className="w-9 h-9 text-gold-light" />
-              <span className="font-serif text-lg font-semibold text-cream leading-tight">
-                Bow Baptist
-                <br />
-                Church
-              </span>
+            <div className="inline-block bg-white/95 rounded-xl px-3 py-2 mb-4 shadow-md">
+              <img
+                src="/logo.png"
+                alt="Bow Baptist Church"
+                className="w-[210px] h-auto object-contain"
+              />
             </div>
             <p className="text-sm leading-relaxed">
               1102 Route 5<br />
