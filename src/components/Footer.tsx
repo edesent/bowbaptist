@@ -29,14 +29,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 pt-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-14 border-b border-white/[.1]">
           <div>
-            <div className="mb-4">
-              <img
-                src="/logo.png"
-                alt="Bow Baptist Church"
-                className="w-[215px] h-auto object-contain contrast-125 brightness-110 invert mix-blend-screen drop-shadow-[0_3px_14px_rgba(0,0,0,0.4)]"
-              />
-              <p className="text-sm text-white/80 mt-1 ml-1">The Church That Cares.</p>
-            </div>
+            <img
+              src="/logo-white.png"
+              alt="Bow Baptist Church"
+              className="w-[215px] h-auto object-contain drop-shadow-[0_3px_14px_rgba(0,0,0,0.45)] mb-4"
+            />
+            <p className="font-serif text-lg text-white mb-3">The Church That Cares.</p>
             <p className="text-sm leading-relaxed">
               1102 Route 5<br />
               Springfield, VT 05156<br />
