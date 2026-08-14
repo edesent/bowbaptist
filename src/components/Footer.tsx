@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-14 border-b border-white/[.1]">
           <div>
             <img
-              src="/logo-white.png"
+              src="/logo-line.png"
               alt="Bow Baptist Church"
               className="w-[215px] h-auto object-contain drop-shadow-[0_3px_14px_rgba(0,0,0,0.45)] mb-4"
             />
