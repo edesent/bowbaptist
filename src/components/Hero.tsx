@@ -28,7 +28,7 @@ export default function Hero() {
           </p>
 
           <p className="text-base sm:text-lg md:text-xl text-navy-deep/85 leading-relaxed max-w-xl [text-shadow:0_1px_8px_rgba(255,255,255,0.65)]">
-            A gospel light in the hills of Vermont since 1837.
+            Preaching the Gospel in the foothills of Vermont since 1837.
           </p>
         </div>
       </div>
