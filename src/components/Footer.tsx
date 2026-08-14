@@ -29,18 +29,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 pt-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-14 border-b border-white/[.1]">
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-16 h-16 rounded-full overflow-hidden bg-white flex items-center justify-center shrink-0">
-                <img
-                  src="/logo.png"
-                  alt="Bow Baptist Church"
-                  className="w-[150%] max-w-none h-[150%] object-cover object-top"
-                />
-              </div>
-              <div className="text-white leading-none">
-                <div className="font-serif text-2xl tracking-[0.16em]">BOW</div>
-                <div className="text-[10px] tracking-[0.3em] uppercase mt-1">Baptist Church</div>
-              </div>
+            <div className="mb-4">
+              <img
+                src="/logo-white.png"
+                alt="Bow Baptist Church"
+                className="w-[220px] h-auto object-contain"
+              />
             </div>
             <p className="font-serif text-lg text-white mb-3">The Church That Cares.</p>
             <p className="text-sm leading-relaxed">
