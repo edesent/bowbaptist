@@ -15,11 +15,11 @@ export default function Hero() {
 
       <div className="relative z-[2] w-full max-w-7xl mx-auto px-6 pt-28 pb-20">
         <div className="max-w-2xl text-navy-deep">
-          <div className="mb-8">
+          <div className="mb-6">
             <img
               src="/logo.png"
               alt="Bow Baptist Church"
-              className="w-[min(72vw,470px)] h-auto object-contain mix-blend-multiply"
+              className="w-[min(62vw,360px)] h-auto object-contain mix-blend-multiply"
             />
           </div>
 
