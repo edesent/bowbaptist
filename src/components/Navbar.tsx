@@ -63,15 +63,17 @@ export default function Navbar() {
         <a
           href="#home"
           onClick={(e) => handleLinkClick(e, { href: "#home", label: "Home" })}
-          className="flex flex-col items-start text-white"
+          className="flex items-center text-white"
           aria-label="Bow Baptist Church — home"
         >
-          <img
-            src="/logo.png"
-            alt="Bow Baptist Church"
-            className="w-[205px] sm:w-[225px] h-auto object-contain contrast-125 brightness-110 invert mix-blend-screen drop-shadow-[0_3px_14px_rgba(0,0,0,0.45)]"
-          />
-          <span className="text-[11px] sm:text-xs text-white/80 mt-1 ml-1">The Church That Cares.</span>
+          <div className="flex flex-col items-start">
+            <img
+              src="/logo-white.png"
+              alt="Bow Baptist Church"
+              className="w-[205px] sm:w-[225px] h-auto object-contain drop-shadow-[0_3px_14px_rgba(0,0,0,0.45)]"
+            />
+            <span className="text-[11px] sm:text-xs text-white/85 mt-1 ml-1">The Church That Cares.</span>
+          </div>
         </a>
 
         <ul className="hidden lg:flex items-center gap-1">
