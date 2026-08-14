@@ -46,10 +46,7 @@ export default function Footer() {
             <p className="text-sm leading-relaxed">
               1102 Route 5<br />
               Springfield, VT 05156<br />
-              <a
-                href="tel:+18025464902"
-                className="text-gold-pale hover:text-gold-light transition-colors"
-              >
+              <a href="tel:+18025464902" className="text-gold-pale hover:text-gold-light transition-colors">
                 (802) 546-4902
               </a>
             </p>
@@ -60,10 +57,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-cream/60 hover:text-gold-pale sm:hover:pl-1 transition-all"
-                  >
+                  <a href={link.href} className="text-sm text-cream/60 hover:text-gold-pale sm:hover:pl-1 transition-all">
                     {link.label}
                   </a>
                 </li>
@@ -115,10 +109,7 @@ export default function Footer() {
         </div>
 
         <div className="text-center py-6 text-sm text-cream/30">
-          <p>
-            &copy; {new Date().getFullYear()} Bow Baptist Church · Weathersfield Bow,
-            Vermont. All rights reserved.
-          </p>
+          <p>&copy; {new Date().getFullYear()} Bow Baptist Church · Weathersfield Bow, Vermont. All rights reserved.</p>
         </div>
       </div>
     </footer>
