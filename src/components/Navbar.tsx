@@ -67,11 +67,13 @@ export default function Navbar() {
           className="flex items-center text-white"
           aria-label="Bow Baptist Church — home"
         >
-          <img
-            src="/logo-header.png"
-            alt="Bow Baptist Church"
-            className="w-[250px] h-auto"
-          />
+          <div className="bg-white/95 rounded-lg px-3 py-1.5 shadow-md">
+            <img
+              src="/logo.png"
+              alt="Bow Baptist Church"
+              className="w-[210px] sm:w-[235px] h-auto object-contain"
+            />
+          </div>
         </a>
 
         {/* Desktop Menu */}
