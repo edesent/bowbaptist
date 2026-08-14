@@ -10,41 +10,26 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/60 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/10 via-transparent to-navy-deep/25" />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/78 via-navy-deep/38 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/18 via-transparent to-navy-deep/45" />
 
       <div className="relative z-[2] w-full max-w-7xl mx-auto px-6 pt-28 pb-20">
-        <div className="max-w-2xl text-navy-deep">
-          <div className="mb-6">
+        <div className="max-w-2xl text-white">
+          <div className="mb-5 drop-shadow-[0_5px_24px_rgba(0,0,0,0.5)]">
             <img
-              src="/logo.png"
+              src="/logo-white.png"
               alt="Bow Baptist Church"
-              className="w-[min(62vw,360px)] h-auto object-contain mix-blend-multiply"
+              className="w-[min(70vw,430px)] h-auto object-contain"
             />
           </div>
 
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight mb-5">
+          <p className="font-serif text-2xl sm:text-3xl md:text-4xl italic text-white mb-5 [text-shadow:0_2px_14px_rgba(0,0,0,0.5)]">
             The Church That Cares.
-          </h1>
-
-          <p className="text-lg sm:text-xl md:text-2xl leading-relaxed mb-8 max-w-xl">
-            Proclaiming the Saving Grace of Jesus Christ.
           </p>
 
-          <div className="flex gap-4 flex-wrap">
-            <a
-              href="#services"
-              className="inline-flex items-center justify-center bg-navy-deep text-white font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-md border-2 border-navy-deep hover:bg-navy hover:-translate-y-0.5 transition-all"
-            >
-              Join Us This Sunday
-            </a>
-            <a
-              href="#welcome"
-              className="inline-flex items-center justify-center text-navy-deep font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-md border-2 border-navy-deep hover:bg-white/35 hover:-translate-y-0.5 transition-all"
-            >
-              About Our Church
-            </a>
-          </div>
+          <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed max-w-xl [text-shadow:0_1px_10px_rgba(0,0,0,0.45)]">
+            A gospel light in the hills of Vermont since 1837.
+          </p>
         </div>
       </div>
     </header>
