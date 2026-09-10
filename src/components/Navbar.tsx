@@ -70,7 +70,7 @@ export default function Navbar() {
           <img
             src="/img-1503.png"
             alt="Bow Baptist Church"
-            className="w-[250px] h-auto mix-blend-screen [filter:invert(1)_grayscale(1)_brightness(2)]"
+            className="w-[250px] h-auto brightness-0 invert"
           />
         </a>
 
