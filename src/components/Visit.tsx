@@ -38,9 +38,9 @@ export default function Visit() {
               </div>
 
               <p className="text-lg text-text-light leading-relaxed">
-                We would love to have you and your family join us for Missions Month at Bow
-                Baptist Church. Come and enjoy a wonderful Sunday meeting these missionaries
-                and hearing about the work God has called them to do.
+                We would love to have you and your family join us for this special Missions
+                Month at Bow Baptist Church. Come and enjoy a wonderful Sunday meeting these
+                missionaries and hearing about the work God has called them to do.
               </p>
             </div>
           </AnimateOnScroll>
