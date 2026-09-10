@@ -30,7 +30,7 @@ export default function Visit() {
 
               <div className="bg-warm-white rounded-2xl p-7 md:p-8 shadow-sm ring-1 ring-navy-deep/[.06] mb-6">
                 <p className="text-sm font-bold tracking-[0.18em] uppercase text-gold mb-2">
-                  September 2026
+                  September 2026 • Missions Month
                 </p>
                 <p className="font-serif text-2xl md:text-3xl font-semibold text-text-dark">
                   Join us every Sunday in September
