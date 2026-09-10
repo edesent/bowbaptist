@@ -33,7 +33,7 @@ export default function Visit() {
                   September 2026 • Missions Month
                 </p>
                 <p className="font-serif text-2xl md:text-3xl font-semibold text-text-dark">
-                  Join us every Sunday in September
+                  Join Us Every Sunday in September
                 </p>
               </div>
 
