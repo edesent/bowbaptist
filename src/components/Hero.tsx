@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-navy-deep/25" />
 
       {/* ── Content ───────────────────────────────────── */}
-      <div className="relative z-[2] text-center text-white max-w-3xl px-5 pt-24 pb-10 md:pt-32">
+      <div className="relative z-[2] text-center text-white max-w-3xl px-5 pt-40 pb-10 md:pt-48">
         <p className="text-xs sm:text-sm font-semibold tracking-[0.32em] uppercase text-gold-pale mb-8 animate-fade-up animation-delay-200">
           Weathersfield Bow · Vermont
         </p>
