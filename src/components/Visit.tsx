@@ -25,21 +25,22 @@ export default function Visit() {
               </span>
               <Peaks className="text-gold-light mb-5" />
               <h2 className="font-serif text-4xl md:text-5xl font-semibold text-text-dark mb-6">
-                Join Us August 8
+                Missions Month
               </h2>
 
               <div className="bg-warm-white rounded-2xl p-7 md:p-8 shadow-sm ring-1 ring-navy-deep/[.06] mb-6">
                 <p className="text-sm font-bold tracking-[0.18em] uppercase text-gold mb-2">
-                  Date &amp; Time
+                  September 2026
                 </p>
                 <p className="font-serif text-2xl md:text-3xl font-semibold text-text-dark">
-                  August 8 • 11:30 AM–3:30 PM
+                  Join us every Sunday in September
                 </p>
               </div>
 
               <p className="text-lg text-text-light leading-relaxed">
-                We would love to have you and your family join us for this special event at
-                Bow Baptist Church. Come enjoy a wonderful afternoon of fellowship with us.
+                We would love to have you and your family join us for Missions Month at Bow
+                Baptist Church. Come and enjoy a wonderful Sunday meeting these missionaries
+                and hearing about the work God has called them to do.
               </p>
             </div>
           </AnimateOnScroll>
