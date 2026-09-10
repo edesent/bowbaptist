@@ -11,8 +11,8 @@ export default function Visit() {
           <AnimateOnScroll>
             <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-navy-deep/10">
               <img
-                src="/family-fun-day-fb.png"
-                alt="Special event at Bow Baptist Church on August 8"
+                src="https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/t6Eo3MhkyCpnSCffRaCbmr1cmiRLqE2a/IMG_1502-4jm59cWWhmN5MRhgsCssnSVBjlTxkE.png"
+                alt="Bow Baptist Church Missions Month — September 2026"
                 className="w-full aspect-[4/5] object-cover block"
               />
             </div>
