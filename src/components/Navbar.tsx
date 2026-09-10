@@ -68,7 +68,7 @@ export default function Navbar() {
           aria-label="Bow Baptist Church — home"
         >
           <img
-            src="/logo-header.png"
+            src="/img-1290.png"
             alt="Bow Baptist Church"
             className="w-[250px] h-auto"
           />
