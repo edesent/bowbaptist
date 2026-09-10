@@ -26,7 +26,7 @@ export default function Hero() {
           <img
             src="/img-1503.png"
             alt="Bow Baptist Church"
-            className="w-[min(80vw,540px)] h-auto mix-blend-screen [filter:invert(1)_grayscale(1)_brightness(2)] drop-shadow-[0_2px_28px_rgba(10,18,36,0.6)]"
+            className="w-[min(80vw,540px)] h-auto brightness-0 invert drop-shadow-[0_2px_28px_rgba(10,18,36,0.6)]"
           />
         </h1>
         <div className="w-20 h-[3px] bg-gold-light mx-auto mb-6 rounded animate-fade-up animation-delay-600" />
