@@ -60,19 +60,8 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        {/* Brand */}
-        <a
-          href="#home"
-          onClick={(e) => handleLinkClick(e, { href: "#home", label: "Home" })}
-          className="flex items-center text-white"
-          aria-label="Bow Baptist Church — home"
-        >
-          <img
-            src="/img-1503.png"
-            alt="Bow Baptist Church"
-            className="w-[250px] h-auto brightness-0 invert"
-          />
-        </a>
+        {/* Brand area intentionally left open on the homepage header */}
+        <div aria-hidden="true" />
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center gap-1">
