@@ -92,6 +92,18 @@ const churchSchema = {
         address: "1102 Route 5, Springfield, VT 05156",
       },
     },
+    {
+      "@type": "Event",
+      name: "Missions Month",
+      startDate: "2026-09-06T10:00",
+      endDate: "2026-09-27T19:00",
+      description: "Join Bow Baptist Church every Sunday in September for Missions Month and meet missionaries sharing the work God has called them to do.",
+      location: {
+        "@type": "Place",
+        name: "Bow Baptist Church",
+        address: "1102 Route 5, Springfield, VT 05156",
+      },
+    },
   ],
 };
 
