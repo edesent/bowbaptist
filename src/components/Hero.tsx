@@ -24,7 +24,7 @@ export default function Hero() {
         </p>
         <h1 className="flex justify-center mb-6 animate-fade-up animation-delay-400">
           <img
-            src="/img-1290.png"
+            src="/img-1503.png"
             alt="Bow Baptist Church"
             className="w-[min(80vw,540px)] h-auto mix-blend-screen [filter:invert(1)_grayscale(1)_brightness(2)] drop-shadow-[0_2px_28px_rgba(10,18,36,0.6)]"
           />
